@@ -18,7 +18,7 @@ import java.util.Optional;
 @Data
 @RestController //Marks this class as a Spring REST Controller, meaning it handles HTTP requests and responses.
 //Internally, it combines @Controller and @ResponseBody, eliminating the need to annotate each method with @ResponseBody
-@CrossOrigin  //Cross-origin resource sharing.allowing frontend applications (e.g., Angular, React) running on different domains to communicate with this backend API.
+@CrossOrigin(origins = "http://localhost:5173")  //Cross-origin resource sharing.allowing frontend applications (e.g., Angular, React) running on different domains to communicate with this backend API.
 @Validated
 @RequestMapping("/users")
 public class  UserAPI {
